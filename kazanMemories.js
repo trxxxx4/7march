@@ -1,21 +1,25 @@
 
 
-const time =  new Date();
+const time = new Date();
 console.log(time.getTime());
 
-const countTimeFromPost = (loadTime) =>{
-    
-    
-    if (((time - loadTime) / 1000 / 60/60 ) < 1) {
-        return `${Math.floor((time - loadTime) / 1000 / 60 )} м. назад`
+const countTimeFromPost = (loadTime) => {
+    if (((time - loadTime) / 1000 / 60 / 60 >= 1) && ((time - loadTime) / 1000 / 60 / 60 < 24)) {
+        return `${Math.floor((time - loadTime) / 1000 / 60 / 60)} ч. назад`;
+
     }
-    else if (((time - loadTime) / 1000 / 60/60/24 ) < 1){
-        return `${Math.floor((time - loadTime) / 1000 / 60 /24 )} ч. назад`
+    else if ((time - loadTime) / 1000/60 <= 59) {
+        return `${Math.floor((time - loadTime) / 1000/60)} м. назад`;
     }
-    else {
-        return `${Math.floor((time - loadTime) / 1000 / 60 /24 /7 )} д. назад`
+    else if (((time - loadTime)/1000/60/60/24 >= 1) && ((time - loadTime)/1000/60/60/24 < 7)){
+        return `${Math.floor((time - loadTime)/1000/60/60/24)} н. назад`
     }
+
+
 }
+console.log(new Date());
+console.log(new Date(1709723043802));
+
 
 
 const storiesUsers = [{
@@ -31,11 +35,11 @@ const storiesUsers = [{
 {
     id: 2,
     nickname: 'GitHub',
-    image: 'https://gitlab.com/uploads/-/system/group/avatar/10532272/github.png'
+    image: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/events/GH.png'
 },
 {
     id: 3,
-    nickname: 'zxcVllad',
+    nickname: 'zxcVladdd',
     image: 'https://sun9-46.userapi.com/impg/Xl3Ihp5MsuTXO3cXyUNy3S4BBQ0ZrDVb6MGbPQ/hh3hpf87XY0.jpg?size=869x869&quality=95&sign=ff7c092d2bdabd7fdbfc02208de1c3d1&type=album'
 },];
 
@@ -46,39 +50,41 @@ const storiesUsers = [{
 const posts = [{
     nickname: 'syndYYk007',
     avatar: 'https://sun9-70.userapi.com/impg/oI2Q2cjjUCZfVs3dvMdGUSRu2zoDVu_qV-nj8A/31weBK63law.jpg?size=960x1280&quality=95&sign=b5e400719c90691913bb94bdd71a1d3d&type=album',
-    media: 'https://sun9-46.userapi.com/impg/C2QkI6zqCNtKNHuyIS6A-qXEdw2lWrxBX_UTiQ/_D32lz3Xkwg.jpg?size=2560x1922&quality=95&sign=02c316eaef932bd333e76346f90ed2fe&type=album', 
+    media: 'https://sun9-46.userapi.com/impg/C2QkI6zqCNtKNHuyIS6A-qXEdw2lWrxBX_UTiQ/_D32lz3Xkwg.jpg?size=2560x1922&quality=95&sign=02c316eaef932bd333e76346f90ed2fe&type=album',
     description: 'ну с 8 марта',
     likes: 104,
     loadTime: 1709723043802,
-},{
+    
+}, {
     nickname: 'bat9_bober',
     avatar: 'https://sun9-67.userapi.com/impg/vSlcLBJIqUNHmlj5CttxoiZxRyLllLlnJr42og/dtFvkCjGhs8.jpg?size=1196x1600&quality=95&sign=c944233de9b8cbe846aaa307f6d7df50&type=album',
-    media: 'https://sun9-60.userapi.com/impg/0KeO-LpreEmc8vOrzNQsfAVAdF6r2gJYBQixxw/c0n1vZ53mX0.jpg?size=1190x901&quality=95&sign=d6cda6487777aa71ffd2e052128d8fc7&type=album', 
+    media: 'https://sun9-60.userapi.com/impg/0KeO-LpreEmc8vOrzNQsfAVAdF6r2gJYBQixxw/c0n1vZ53mX0.jpg?size=1190x901&quality=95&sign=d6cda6487777aa71ffd2e052128d8fc7&type=album',
     description: 'тимур ну тут надо придумать что написать',
     likes: 88,
     loadTime: 1709725017622,
-},{
+}, {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
-    media: 'https://sun9-34.userapi.com/impg/PQ03Wvbc0zPrllzmL8yEHZ4DKXJNtU6psLnE9w/DYA1NxCW7vw.jpg?size=2560x1704&quality=95&sign=1e806eeb3acc66ef4ff253e7304d4c1c&type=album', 
+    media: 'https://sun9-34.userapi.com/impg/PQ03Wvbc0zPrllzmL8yEHZ4DKXJNtU6psLnE9w/DYA1NxCW7vw.jpg?size=2560x1704&quality=95&sign=1e806eeb3acc66ef4ff253e7304d4c1c&type=album',
     description: 'дотка как дотка',
     likes: 83,
     loadTime: 1709725628572,
-    
-},{
+
+}, {
     nickname: 'semenGolovin',
     avatar: 'https://sun9-40.userapi.com/impg/bEqunIc_yveicRF2XzJhLYhqTphWXvVxTsKRgw/U6cCE4lj1eQ.jpg?size=70x65&quality=95&sign=d652eb4fbe42a8fded438805e2a7d6cc&type=album',
-    media: 'https://sun9-63.userapi.com/impg/pwi51yRSJcbsNzd8czdb1bqjBZ4ejCuNtcYn2g/pwYAFqsdrUc.jpg?size=1280x960&quality=95&sign=05c99c172c83e53747c049e63392bd13&type=album', 
+    media: 'https://sun9-63.userapi.com/impg/pwi51yRSJcbsNzd8czdb1bqjBZ4ejCuNtcYn2g/pwYAFqsdrUc.jpg?size=1280x960&quality=95&sign=05c99c172c83e53747c049e63392bd13&type=album',
     description: 'я капитан белбурга',
     likes: 119,
     loadTime: 1709726032912,
-},{
+}, {
     nickname: 'ba4uhhha',
     avatar: 'https://sun9-75.userapi.com/impg/Wt5tj7zBmHpz7jjC1hS4tvKLawNfbXActAFGSg/FUKgdfi1lFw.jpg?size=319x343&quality=95&sign=e79d9b42bfbfb166597d8f94e7394b4b&type=album',
-    media: 'https://sun9-37.userapi.com/impg/xkXFJqkdTrI9uAhG3YcsB9lYuCX18IPopN-aOQ/v30xFo73348.jpg?size=2560x1704&quality=96&sign=6b29e05e95265628a1518341880990c5&type=album', 
+    media: 'https://sun9-37.userapi.com/impg/xkXFJqkdTrI9uAhG3YcsB9lYuCX18IPopN-aOQ/v30xFo73348.jpg?size=2560x1704&quality=96&sign=6b29e05e95265628a1518341880990c5&type=album',
     description: 'а мне вообще нравится рыжикова',
     likes: 94,
     loadTime: 1709727020004,
+    aa:1709727020004,
 }
 ]
 
@@ -86,43 +92,40 @@ const posts = [{
 
 
 
-
-
-for (let i = 0; i < document.querySelectorAll('.post').length; i++){
-    if (posts[i].media){
+for (let i = 0; i < document.querySelectorAll('.post').length; i++) {
+    if (posts[i].media) {
         document.querySelectorAll('.avatar')[i].src = posts[i].avatar;
-    document.querySelectorAll('.nickname')[i].innerHTML = posts[i].nickname;
-    
-    document.querySelectorAll('.post__media')[i].src = posts[i].media;
-    document.querySelectorAll('.likes')[i].innerHTML = `Понравилось: ${posts[i].likes}`;
-    document.querySelectorAll('#description__text')[i].innerHTML = posts[i].description;
-    document.querySelectorAll('#nickname__weight')[i].innerHTML = posts[i].nickname;
-    document.querySelectorAll('.add__comment__avatar')[i].src = posts[i].avatar;
-    document.querySelectorAll('.load__time')[i].innerHTML = countTimeFromPost(posts[i].loadTime)    
+        document.querySelectorAll('.nickname')[i].innerHTML = posts[i].nickname;
+
+        document.querySelectorAll('.post__media')[i].src = posts[i].media;
+        document.querySelectorAll('.likes')[i].innerHTML = `Понравилось: ${posts[i].likes}`;
+        document.querySelectorAll('#description__text')[i].innerHTML = posts[i].description;
+        document.querySelectorAll('#nickname__weight')[i].innerHTML = posts[i].nickname;
+        document.querySelectorAll('.add__comment__avatar')[i].src = posts[i].avatar;
+        document.querySelectorAll('.load__time')[i].innerHTML = countTimeFromPost(posts[i].loadTime)
 
     }
-    else{
+    else {
         document.querySelectorAll('.avatar')[i].src = posts[i].avatar;
-    document.querySelectorAll('.nickname')[i].innerHTML = posts[i].nickname;
-    
-    
-    document.querySelectorAll('.likes')[i].innerHTML = `Понравилось: ${posts[i].likes}`;
-    document.querySelectorAll('#description__text')[i].innerHTML = posts[i].description;
-    document.querySelectorAll('#nickname__weight')[i].innerHTML = posts[i].nickname;
-    document.querySelectorAll('.add__comment__avatar')[i].src = posts[i].avatar;
-    document.querySelectorAll('.load__time')[i].innerHTML = countTimeFromPost(posts[i].loadTime)    
+        document.querySelectorAll('.nickname')[i].innerHTML = posts[i].nickname;
+
+
+        document.querySelectorAll('.likes')[i].innerHTML = `Понравилось: ${posts[i].likes}`;
+        document.querySelectorAll('#description__text')[i].innerHTML = posts[i].description;
+        document.querySelectorAll('#nickname__weight')[i].innerHTML = posts[i].nickname;
+        document.querySelectorAll('.add__comment__avatar')[i].src = posts[i].avatar;
+        document.querySelectorAll('.load__time')[i].innerHTML = countTimeFromPost(posts[i].loadTime)
 
     }
-    
+
 }
 
 
 
-for (let i = 0; i < storiesUsers.length; i++){
+for (let i = 0; i < storiesUsers.length; i++) {
     document.querySelectorAll('.user__image')[i].src = storiesUsers[i].image;
     document.querySelectorAll('.user__name')[i].innerHTML = storiesUsers[i].nickname;
 }
 
 console.log(document.querySelectorAll('#nickname__weight').length);
-
 
