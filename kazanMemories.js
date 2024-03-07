@@ -1,7 +1,7 @@
-
+console.log("Что ты тут ищешь?");
 
 const time = new Date();
-console.log(time.getTime());
+console.log(`Время сейчас: ${time.getTime()}`);
 
 const countTimeFromPost = (loadTime) => {
     if (((time - loadTime) / 1000 / 60 / 60 >= 1) && ((time - loadTime) / 1000 / 60 / 60 < 24)) {
@@ -12,11 +12,29 @@ const countTimeFromPost = (loadTime) => {
         return `${Math.floor((time - loadTime) / 1000/60)} м. назад`;
     }
     else if (((time - loadTime)/1000/60/60/24 >= 1) && ((time - loadTime)/1000/60/60/24 < 7)){
-        return `${Math.floor((time - loadTime)/1000/60/60/24)} н. назад`
+        return `${Math.floor((time - loadTime)/1000/60/60/24)} д. назад`
     }
 
 
 }
+
+
+const countTimeFromComment = (loadTime) => {
+    if (((time - loadTime) / 1000 / 60 / 60 >= 1) && ((time - loadTime) / 1000 / 60 / 60 < 24)) {
+        return `${Math.floor((time - loadTime) / 1000 / 60 / 60)} ч.`;
+
+    }
+    else if ((time - loadTime) / 1000/60 <= 59) {
+        return `${Math.floor((time - loadTime) / 1000/60)} мин.`;
+    }
+    else if (((time - loadTime)/1000/60/60/24 >= 1) && ((time - loadTime)/1000/60/60/24 < 7)){
+        return `${Math.floor((time - loadTime)/1000/60/60/24)} нед.`
+    }
+
+
+}
+
+
 console.log(new Date());
 console.log(new Date(1709723043802));
 
@@ -84,11 +102,114 @@ const posts = [{
     description: 'а мне вообще нравится рыжикова',
     likes: 94,
     loadTime: 1709727020004,
-    aa:1709727020004,
+    
 }
 ]
 
+const inputsDiv = document.querySelectorAll('.button__and__input__pole');
+const inputs = document.querySelectorAll('.comment__input');
+//inputButtons = document.querySelectorAll('.add__comment__button');
+console.log(inputs);
 
+const likeDefault = 0;
+
+const setComment = (inputValue,  index) =>{
+    console.log('zxc');
+    let commentContainer = document.createElement('div');
+    commentContainer.classList.add('comment__container');
+    let avatarContainer =  document.createElement('div');
+    avatarContainer.classList.add('add__comment__avatar__comment');
+    let likeComment = document.createElement('div');
+    likeComment.classList.add();
+    let avatarImg = document.createElement('img');
+    avatarImg.classList.add('add__comment__avatar__comment');
+    let commentPoleContainer = document.createElement('div');
+    commentPoleContainer.classList.add('comment__pole__container');
+    let nickname = document.createElement('h2');
+    nickname.classList.add('comment__user');
+    let nicknameAndDateContainer = document.createElement('div');
+    nicknameAndDateContainer.classList.add('nickname__and__data__container');
+    let commentText = document.createElement('h2');
+    commentText.classList.add('nickname');
+    let  respondButton = document.createElement('h2');
+    respondButton.classList.add('load__time');
+    let commentLoadTime = document.createElement('h2');
+    commentLoadTime.classList.add('load__time');
+    avatarImg.src = storiesUsers[0].image;
+    nickname.innerHTML = 'beKsayyy_';
+    commentLoadTime.innerHTML = 'Только что'
+    commentText.innerHTML = inputValue;
+    respondButton.innerHTML = "Ответить";
+    document.querySelectorAll('.post')[index].appendChild(commentContainer);
+    commentContainer.appendChild(avatarContainer);
+    avatarContainer.appendChild(avatarImg);
+    commentContainer.appendChild(commentPoleContainer);
+    commentContainer.appendChild(likeComment);
+    commentPoleContainer.appendChild(nicknameAndDateContainer);
+    nicknameAndDateContainer.appendChild(nickname);
+    nicknameAndDateContainer.appendChild(commentLoadTime);
+    commentPoleContainer.appendChild(commentText);
+    commentPoleContainer.appendChild(respondButton);
+}
+
+
+
+const inputValueFunk = (text) =>{
+    document.querySelectorAll('.add__comment__button').forEach((item, index)=>{
+        item.addEventListener('click', setComment(text));
+    });
+};
+
+
+
+//document.querySelectorAll('.add__comment__button').forEach((item, index)=>{
+  //  item.addEventListener('click', setComment(item.value,  index));
+//})
+
+
+const flButton = () =>{
+    
+    inputs.forEach((item, index) => {
+        
+        if (item.value != ''){
+            //console.log(item.value);
+            document.querySelectorAll('.add__comment__button')[index].classList.remove('hidden');
+            document.querySelectorAll('.add__comment__button')[index].classList.add('view__animation');
+            
+            document.querySelectorAll('.add__comment__button')[index].disabled = false;
+            
+            //document.querySelectorAll('.add__comment__button')[index].addEventListener('click', setComment(item.value,  index));
+            
+            //inputValueFunk(item.value);
+            
+            
+                
+        }
+        else{
+            document.querySelectorAll('.add__comment__button')[index].classList.remove('view__animation');
+            document.querySelectorAll('.add__comment__button')[index].classList.add('hidden__animation');
+            document.querySelectorAll('.add__comment__button')[index].classList.remove('hidden__animation');
+            document.querySelectorAll('.add__comment__button')[index].classList.add('hidden');
+            document.querySelectorAll('.add__comment__button')[index].disabled = true;
+
+        }
+        
+    });
+}
+
+
+
+
+
+
+//let button = document.createElement('button');
+            //button.classList.add('add__comment__button');
+            //button.innerHTML = '<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>';
+            //inputsDiv[index].appendChild(button);
+
+window.addEventListener('click', flButton);
+
+window.addEventListener('keyup', flButton);
 
 
 
@@ -98,11 +219,12 @@ for (let i = 0; i < document.querySelectorAll('.post').length; i++) {
         document.querySelectorAll('.nickname')[i].innerHTML = posts[i].nickname;
 
         document.querySelectorAll('.post__media')[i].src = posts[i].media;
-        document.querySelectorAll('.likes')[i].innerHTML = `Понравилось: ${posts[i].likes}`;
+        document.querySelectorAll('.likes')[i].innerHTML = `Нравится: ${posts[i].likes}`;
         document.querySelectorAll('#description__text')[i].innerHTML = posts[i].description;
         document.querySelectorAll('#nickname__weight')[i].innerHTML = posts[i].nickname;
         document.querySelectorAll('.add__comment__avatar')[i].src = posts[i].avatar;
-        document.querySelectorAll('.load__time')[i].innerHTML = countTimeFromPost(posts[i].loadTime)
+        document.querySelectorAll('.load__time')[i].innerHTML = countTimeFromPost(posts[i].loadTime);
+        
 
     }
     else {
@@ -127,5 +249,6 @@ for (let i = 0; i < storiesUsers.length; i++) {
     document.querySelectorAll('.user__name')[i].innerHTML = storiesUsers[i].nickname;
 }
 
-console.log(document.querySelectorAll('#nickname__weight').length);
 
+
+console.log('<3')
