@@ -143,7 +143,11 @@
     #timur__media{
         width: 100%;
         
-        aspect-ratio: 713/537 ;
+        aspect-ratio:  1287/929;
+    }
+    #bagdish__media__ended{
+        width: 100%;
+        aspect-ratio: 736/736;
     }
     #matvey__media{
         width: 100%;
@@ -153,16 +157,16 @@
     #artem__media{
         width: 100%;
         
-        aspect-ratio: 546/413 ;
+        aspect-ratio:  564/384;
     }
     #bagdish__media{
         width: 100%;
         
-        aspect-ratio: 2560/1704 ;
+        aspect-ratio:  736 / 420;
     }
     #semen__media{
         width: 100%;
-        aspect-ratio: 1280 / 960;
+        aspect-ratio:  140/183;
     }
     .post__footer{
         width: 90%;
@@ -239,6 +243,7 @@
         display: flex;
         justify-content: start;
         gap:10px;
+        padding-bottom: 15px;
 
     }
     .nickname__and__data__container{
@@ -315,6 +320,11 @@
         
         
         animation: fromViewToHidden 200ms;
+    }
+    #sergey__media{
+        width: 100%;
+        
+        aspect-ratio: 1190/901;
     }
     .hidden__animation{
         
@@ -415,6 +425,92 @@
     .heart__icon{
         height: 24px;
         width: 24px;
+    }
+    .comment__input{
+        border: none;
+        color: #6E6E6E;
+        font-size: 15px;
+        width: 70%;
+        outline: none;
+    }
+    
+    .add__comment{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+    }
+    .load__time{
+        font-size: 10px;
+        text-align: center;
+        color: #6E6E6E;
+        font-weight: 400; 
+    }
+    .button__and__input__pole{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       
+        border-radius: 17px;
+        height: 100%;
+        box-shadow: 0px 0px 2px #6E6E6E ;
+        
+    }
+    .add__comment__button{
+        background-color: rgb(0, 141, 255);
+        width: 50px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        
+    }
+    #sergey__media{
+        width: 100%;
+        
+        aspect-ratio: 1190/901;
+    }
+    .hidden{
+        
+        opacity: 0;
+        scale: 0.6;
+    }
+    .view__animation{
+        
+        
+        
+        animation: fromViewToHidden 200ms;
+    }
+    .hidden__animation{
+        
+        animation: fromHiddenToView 100ms;
+    }
+    @keyframes fromViewToHidden{
+        0%{
+            opacity: 0;
+            pointer-events: none;
+            scale: 0.6;
+        }
+        100%{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+    @keyframes fromHiddenToView {
+        0%{
+            opacity: 1;
+            scale: 1;
+        }
+        100%{
+            opacity: 0;
+            pointer-events: none;
+            scale: 0.6;
+
+        }
     }
     .stories__container{
         width: 90%;
@@ -517,7 +613,12 @@
     #timur__media{
         width: 100%;
         
-        aspect-ratio: 713/537 ;
+        aspect-ratio:  1287/929;
+    }
+    #sergey__media{
+        width: 100%;
+        
+        aspect-ratio: 1190/901;
     }
     #matvey__media{
         width: 100%;
@@ -527,16 +628,16 @@
     #artem__media{
         width: 100%;
         
-        aspect-ratio: 546/413 ;
+        aspect-ratio:  564/384;
     }
     #bagdish__media{
         width: 100%;
         
-        aspect-ratio: 2560/1704 ;
+        aspect-ratio:  736 / 420;
     }
     #semen__media{
         width: 100%;
-        aspect-ratio: 1280 / 960;
+        aspect-ratio:  140/183;
     }
     .post__footer{
         width: 90%;
@@ -630,6 +731,92 @@
         display: flex;
         justify-content: center;
         
+    }
+    #sergey__media{
+        width: 100%;
+        
+        aspect-ratio: 1190/901;
+    }
+    .comment__input{
+        border: none;
+        color: #6E6E6E;
+        font-size: 15px;
+        width: 70%;
+        outline: none;
+    }
+    
+    .add__comment{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+    }
+    .load__time{
+        font-size: 10px;
+        text-align: center;
+        color: #6E6E6E;
+        font-weight: 400; 
+    }
+    .button__and__input__pole{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       
+        border-radius: 17px;
+        height: 100%;
+        box-shadow: 0px 0px 2px #6E6E6E ;
+        
+    }
+    .add__comment__button{
+        background-color: rgb(0, 141, 255);
+        width: 50px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        
+    }
+    .hidden{
+        
+        opacity: 0;
+        scale: 0.6;
+    }
+    .view__animation{
+        
+        
+        
+        animation: fromViewToHidden 200ms;
+    }
+    .hidden__animation{
+        
+        animation: fromHiddenToView 100ms;
+    }
+    @keyframes fromViewToHidden{
+        0%{
+            opacity: 0;
+            pointer-events: none;
+            scale: 0.6;
+        }
+        100%{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+    @keyframes fromHiddenToView {
+        0%{
+            opacity: 1;
+            scale: 1;
+        }
+        100%{
+            opacity: 0;
+            pointer-events: none;
+            scale: 0.6;
+
+        }
     }
     .header{
         width: 475px;
@@ -772,7 +959,7 @@
     #timur__media{
         width: 100%;
         
-        aspect-ratio: 713/537 ;
+        aspect-ratio:  1287/929;
     }
     #matvey__media{
         width: 100%;
@@ -782,16 +969,16 @@
     #artem__media{
         width: 100%;
         
-        aspect-ratio: 546/413 ;
+        aspect-ratio:  564/384;
     }
     #bagdish__media{
         width: 100%;
         
-        aspect-ratio: 2560/1704 ;
+        aspect-ratio:  736 / 420;
     }
     #semen__media{
         width: 100%;
-        aspect-ratio: 1280 / 960;
+        aspect-ratio:  140/183;
     }
     .post__footer{
         width: 90%;

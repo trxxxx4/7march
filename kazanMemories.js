@@ -67,41 +67,69 @@ const storiesUsers = [{
 
 const posts = [{
     nickname: 'syndYYk007',
-    avatar: 'https://sun9-70.userapi.com/impg/oI2Q2cjjUCZfVs3dvMdGUSRu2zoDVu_qV-nj8A/31weBK63law.jpg?size=960x1280&quality=95&sign=b5e400719c90691913bb94bdd71a1d3d&type=album',
-    media: 'https://sun9-46.userapi.com/impg/C2QkI6zqCNtKNHuyIS6A-qXEdw2lWrxBX_UTiQ/_D32lz3Xkwg.jpg?size=2560x1922&quality=95&sign=02c316eaef932bd333e76346f90ed2fe&type=album',
-    description: 'ну с 8 марта',
+    avatar: 'https://sun9-22.userapi.com/impg/g9ZyWaW3aQsvEEt9rPei2Bl6YI-wts0AEc8f2A/o4oe00raq7s.jpg?size=298x298&quality=95&sign=4a5be514cf3b4c560c98422c1e7e501d&type=album',
+    media: 'https://sun9-38.userapi.com/impg/Qacg3t_p1uM0NI9NJ1_O6NVO1tCWLn4kPql5sg/5Nia9m0rj8g.jpg?size=1287x929&quality=96&sign=4f6e0360266884e8e1b453bb4bfbefc4&type=album',
+    description: 'Кира, поздравляю с 8 марта) ',
     likes: 104,
-    loadTime: 1709723043802,
+    loadTime: 1709890593000,
     
-}, {
-    nickname: 'bat9_bober',
-    avatar: 'https://sun9-67.userapi.com/impg/vSlcLBJIqUNHmlj5CttxoiZxRyLllLlnJr42og/dtFvkCjGhs8.jpg?size=1196x1600&quality=95&sign=c944233de9b8cbe846aaa307f6d7df50&type=album',
+},
+{
+    nickname: 'sMaxx1mov',
+    avatar: 'https://sun9-17.userapi.com/impf/zp4b6ybUuj0v3ANlrSre1wnOXV7G1Pyfqbv9jg/x0fXuiNyvoo.jpg?size=65x62&quality=96&sign=054795abee1567d1882002574e022381&type=album',
     media: 'https://sun9-60.userapi.com/impg/0KeO-LpreEmc8vOrzNQsfAVAdF6r2gJYBQixxw/c0n1vZ53mX0.jpg?size=1190x901&quality=95&sign=d6cda6487777aa71ffd2e052128d8fc7&type=album',
-    description: 'тимур ну тут надо придумать что написать',
-    likes: 88,
-    loadTime: 1709725017622,
-}, {
-    nickname: 'trxxxx4',
-    avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
-    media: 'https://sun9-34.userapi.com/impg/PQ03Wvbc0zPrllzmL8yEHZ4DKXJNtU6psLnE9w/DYA1NxCW7vw.jpg?size=2560x1704&quality=95&sign=1e806eeb3acc66ef4ff253e7304d4c1c&type=album',
-    description: 'дотка как дотка',
-    likes: 83,
+    description: 'С лучшим другом в культурном заведении',
+    likes: 173,
     loadTime: 1709725628572,
 
 }, {
-    nickname: 'semenGolovin',
-    avatar: 'https://sun9-40.userapi.com/impg/bEqunIc_yveicRF2XzJhLYhqTphWXvVxTsKRgw/U6cCE4lj1eQ.jpg?size=70x65&quality=95&sign=d652eb4fbe42a8fded438805e2a7d6cc&type=album',
-    media: 'https://sun9-63.userapi.com/impg/pwi51yRSJcbsNzd8czdb1bqjBZ4ejCuNtcYn2g/pwYAFqsdrUc.jpg?size=1280x960&quality=95&sign=05c99c172c83e53747c049e63392bd13&type=album',
-    description: 'я капитан белбурга',
-    likes: 119,
-    loadTime: 1709726032912,
+    nickname: 'bat9_bober',
+    avatar: 'https://sun9-67.userapi.com/impg/vSlcLBJIqUNHmlj5CttxoiZxRyLllLlnJr42og/dtFvkCjGhs8.jpg?size=1196x1600&quality=95&sign=c944233de9b8cbe846aaa307f6d7df50&type=album',
+    media: 'https://sun9-19.userapi.com/impg/xCzROq_EQkFM-BCgSfsqmtZsA3sDxGFzD-xkVg/h7FpaTDNeLw.jpg?size=564x384&quality=96&sign=d9962e55b094d63b75d62a13274b3ad3&type=album',
+    description: 'Поздравляю тебя, Ксюша, с 8 марта. Желаю тебе счастья и чтобы все космонавты знали, что есть такая прекрасная звёздочка.',
+    likes: 88,
+    loadTime: 1709893053000,
 }, {
+    nickname: 'trxxxx4',
+    avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
+    media: 'https://sun9-78.userapi.com/impg/OSmuRfR9SReCVML3HbF3wZuMoQlGMydBs14K9g/tQJKS4qqA9o.jpg?size=736x420&quality=95&sign=42fa1413dddb1b10d8579580e5f37baa&type=album',
+    description: 'Вика, ну поздравляю с 8 марта.. улыбайя почаще, такая милая когда улыбаешься)',
+    likes: 83,
+    loadTime: 1709882253000,
+
+}, {
+    nickname: 's_zimkfff',
+    avatar: 'https://sun9-54.userapi.com/impg/tXF5mdH2A0lbiqaH3DM-O6HJatMpkYf5Tso2UQ/N5Zx5ZqD29Y.jpg?size=85x83&quality=96&sign=a34b2a8d80a6d73cc33807e9100e8f34&type=album',
+    media: 'https://sun9-24.userapi.com/impg/scXIdGaaiGSa53n1n5z7MbUUQ-t7ijjMNJoJPA/hdlWzZqScWQ.jpg?size=140x183&quality=96&sign=3d04d6fed6fede573bc7a3a813943287&type=album',
+    description: `Полина, Поздравляю с 8 марта от себя и от dollar'а`,
+    likes: 119,
+    loadTime: 1709892213000,
+},{
+    nickname: 'Egoffman',
+    avatar: 'https://sun9-23.userapi.com/impg/pwdNiAx-Owk-PS6drRGPXMRLKTRAfWWKmscM-w/R9xGEAZnzBY.jpg?size=130x145&quality=96&sign=780388a8f09c8acdc4d9684bbb4d93d9&type=album',
+    media: 'https://sun9-77.userapi.com/impg/qqPrwvi3VGYkBOd4Hq4Kdv3a9sYjhCnRvWerHw/KxEc6usI81Y.jpg?size=2560x1920&quality=95&sign=d20fda9dc9ac5b6ddca018f401ebcbc1&type=album',
+    description: 'zxc after fortnite and new drop',
+    likes: 156,
+    loadTime: 1709850993000,
+
+},
+ {
     nickname: 'ba4uhhha',
     avatar: 'https://sun9-75.userapi.com/impg/Wt5tj7zBmHpz7jjC1hS4tvKLawNfbXActAFGSg/FUKgdfi1lFw.jpg?size=319x343&quality=95&sign=e79d9b42bfbfb166597d8f94e7394b4b&type=album',
     media: 'https://sun9-37.userapi.com/impg/xkXFJqkdTrI9uAhG3YcsB9lYuCX18IPopN-aOQ/v30xFo73348.jpg?size=2560x1704&quality=96&sign=6b29e05e95265628a1518341880990c5&type=album',
-    description: 'а мне вообще нравится рыжикова',
+    description: 'Даша, с 8 марта. Хотел бы пожелать оставаться такой же позитивной и яркой',
     likes: 94,
-    loadTime: 1709727020004,
+    loadTime: 1709811393000,
+    
+}, 
+{
+    nickname: 'trxxxx4',
+    avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
+    media: 'https://sun9-80.userapi.com/impg/6KS153Go8PtGOtB5FRyGRsyqI7WwX2sUr_QX-Q/o_i_EE-ZBAM.jpg?size=736x736&quality=95&sign=1c3437a23bc77d31dd81f3fefa6ebc0f&type=album',
+    description: 'ну это на случай если это увидит кто-то кроме меня или тимура... ну привет (^_^) , только в личку не пишите что я тварь <3',
+    likes: 6,
+    loadTime: 1709914833000,
+
     
 }
 ]
@@ -150,22 +178,18 @@ const setComment = (inputValue,  index) =>{
     nicknameAndDateContainer.appendChild(commentLoadTime);
     commentPoleContainer.appendChild(commentText);
     commentPoleContainer.appendChild(respondButton);
+    
+    
+    
+    
 }
 
-
-
-const inputValueFunk = (text) =>{
-    document.querySelectorAll('.add__comment__button').forEach((item, index)=>{
-        item.addEventListener('click', setComment(text));
-    });
-};
 
 
 
 //document.querySelectorAll('.add__comment__button').forEach((item, index)=>{
   //  item.addEventListener('click', setComment(item.value,  index));
 //})
-
 
 const flButton = () =>{
     
@@ -179,7 +203,7 @@ const flButton = () =>{
             document.querySelectorAll('.add__comment__button')[index].disabled = false;
             
             //document.querySelectorAll('.add__comment__button')[index].addEventListener('click', setComment(item.value,  index));
-            
+            //setComment(item.value, index)
             //inputValueFunk(item.value);
             
             
