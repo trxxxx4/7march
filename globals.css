@@ -386,6 +386,10 @@
         display: flex;
         justify-content: center;
     }
+    #bagdish__media__ended{
+        width: 100%;
+        aspect-ratio: 736/736;
+    }
     .header{
         width: 768px;
         display: flex;
@@ -726,6 +730,10 @@
         font-family: "Rubik", sans-serif;
         text-decoration: none;
         list-style-type: none;
+    }
+    #bagdish__media__ended{
+        width: 100%;
+        aspect-ratio: 736/736;
     }
     html{
         display: flex;

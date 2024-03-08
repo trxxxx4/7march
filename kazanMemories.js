@@ -71,7 +71,7 @@ const posts = [{
     media: 'https://sun9-38.userapi.com/impg/Qacg3t_p1uM0NI9NJ1_O6NVO1tCWLn4kPql5sg/5Nia9m0rj8g.jpg?size=1287x929&quality=96&sign=4f6e0360266884e8e1b453bb4bfbefc4&type=album',
     description: 'Кира, поздравляю с 8 марта) ',
     likes: 104,
-    loadTime: 1709890593000,
+    loadTime: 1709869833000,
     
 },
 {
@@ -88,29 +88,29 @@ const posts = [{
     media: 'https://sun9-19.userapi.com/impg/xCzROq_EQkFM-BCgSfsqmtZsA3sDxGFzD-xkVg/h7FpaTDNeLw.jpg?size=564x384&quality=96&sign=d9962e55b094d63b75d62a13274b3ad3&type=album',
     description: 'Поздравляю тебя, Ксюша, с 8 марта. Желаю тебе счастья и чтобы все космонавты знали, что есть такая прекрасная звёздочка.',
     likes: 88,
-    loadTime: 1709893053000,
+    loadTime: 1709880213000,
 }, {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-78.userapi.com/impg/OSmuRfR9SReCVML3HbF3wZuMoQlGMydBs14K9g/tQJKS4qqA9o.jpg?size=736x420&quality=95&sign=42fa1413dddb1b10d8579580e5f37baa&type=album',
-    description: 'Вика, ну поздравляю с 8 марта.. улыбайя почаще, такая милая когда улыбаешься)',
+    description: 'Вика, поздравляю с 8 марта..  только прошу улыбайcя почаще)',
     likes: 83,
-    loadTime: 1709882253000,
+    loadTime: 1709871633000,
 
 }, {
     nickname: 's_zimkfff',
     avatar: 'https://sun9-54.userapi.com/impg/tXF5mdH2A0lbiqaH3DM-O6HJatMpkYf5Tso2UQ/N5Zx5ZqD29Y.jpg?size=85x83&quality=96&sign=a34b2a8d80a6d73cc33807e9100e8f34&type=album',
     media: 'https://sun9-24.userapi.com/impg/scXIdGaaiGSa53n1n5z7MbUUQ-t7ijjMNJoJPA/hdlWzZqScWQ.jpg?size=140x183&quality=96&sign=3d04d6fed6fede573bc7a3a813943287&type=album',
-    description: `Полина, Поздравляю с 8 марта от себя и от dollar'а`,
+    description: `Полина, Поздравляю с 8 марта от себя и от dollar'а (если конечно ещё помнишь такого)`,
     likes: 119,
-    loadTime: 1709892213000,
+    loadTime: 1709877513000,
 },{
     nickname: 'Egoffman',
     avatar: 'https://sun9-23.userapi.com/impg/pwdNiAx-Owk-PS6drRGPXMRLKTRAfWWKmscM-w/R9xGEAZnzBY.jpg?size=130x145&quality=96&sign=780388a8f09c8acdc4d9684bbb4d93d9&type=album',
     media: 'https://sun9-77.userapi.com/impg/qqPrwvi3VGYkBOd4Hq4Kdv3a9sYjhCnRvWerHw/KxEc6usI81Y.jpg?size=2560x1920&quality=95&sign=d20fda9dc9ac5b6ddca018f401ebcbc1&type=album',
     description: 'zxc after fortnite and new drop',
     likes: 156,
-    loadTime: 1709850993000,
+    loadTime: 1709811393000,
 
 },
  {
@@ -119,16 +119,17 @@ const posts = [{
     media: 'https://sun9-37.userapi.com/impg/xkXFJqkdTrI9uAhG3YcsB9lYuCX18IPopN-aOQ/v30xFo73348.jpg?size=2560x1704&quality=96&sign=6b29e05e95265628a1518341880990c5&type=album',
     description: 'Даша, с 8 марта. Хотел бы пожелать оставаться такой же позитивной и яркой',
     likes: 94,
-    loadTime: 1709811393000,
+    
+    loadTime: 1709850993000,
     
 }, 
 {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-80.userapi.com/impg/6KS153Go8PtGOtB5FRyGRsyqI7WwX2sUr_QX-Q/o_i_EE-ZBAM.jpg?size=736x736&quality=95&sign=1c3437a23bc77d31dd81f3fefa6ebc0f&type=album',
-    description: 'ну это на случай если это увидит кто-то кроме меня или тимура... ну привет (^_^) , только в личку не пишите что я тварь <3',
+    description: 'ну это на случай если это увидит кто-то кроме меня и тимура... ну привет (^_^) , только в личку не пишите что я тварь, я же просто тихий и странный <3',
     likes: 6,
-    loadTime: 1709914833000,
+    loadTime: 1709897603000,
 
     
 }
