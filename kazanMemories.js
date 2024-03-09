@@ -69,7 +69,7 @@ const posts = [{
     nickname: 'syndYYk007',
     avatar: 'https://sun9-22.userapi.com/impg/g9ZyWaW3aQsvEEt9rPei2Bl6YI-wts0AEc8f2A/o4oe00raq7s.jpg?size=298x298&quality=95&sign=4a5be514cf3b4c560c98422c1e7e501d&type=album',
     media: 'https://sun9-38.userapi.com/impg/Qacg3t_p1uM0NI9NJ1_O6NVO1tCWLn4kPql5sg/5Nia9m0rj8g.jpg?size=1287x929&quality=96&sign=4f6e0360266884e8e1b453bb4bfbefc4&type=album',
-    description: 'Кира, поздравляю с 8 марта) ',
+    description: 'Кира, поздравляю с 8 марта ',
     likes: 104,
     loadTime: 1709869833000,
     
@@ -93,7 +93,7 @@ const posts = [{
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-44.userapi.com/impg/Zt1lWAANjtnnbrYRylzmTmK7NxPYinxQ-Th8QQ/cgFM9vA824A.jpg?size=223x204&quality=96&sign=3de84f8a7bb5d2b02dc3c7d9ad3e612f&type=album',
-    description: 'Вика, поздравляю с 8 марта)',
+    description: 'Вика, поздравляю с 8 марта, ну как бы все)',
     likes: 83,
     loadTime: 1709871633000,
 
