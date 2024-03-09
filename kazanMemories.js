@@ -92,7 +92,7 @@ const posts = [{
 }, {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
-    media: 'https://sun9-78.userapi.com/impg/OSmuRfR9SReCVML3HbF3wZuMoQlGMydBs14K9g/tQJKS4qqA9o.jpg?size=736x420&quality=95&sign=42fa1413dddb1b10d8579580e5f37baa&type=album',
+    media: 'https://sun9-44.userapi.com/impg/Zt1lWAANjtnnbrYRylzmTmK7NxPYinxQ-Th8QQ/cgFM9vA824A.jpg?size=223x204&quality=96&sign=3de84f8a7bb5d2b02dc3c7d9ad3e612f&type=album',
     description: 'Вика, поздравляю с 8 марта)',
     likes: 83,
     loadTime: 1709871633000,
@@ -101,7 +101,7 @@ const posts = [{
     nickname: 's_zimkfff',
     avatar: 'https://sun9-54.userapi.com/impg/tXF5mdH2A0lbiqaH3DM-O6HJatMpkYf5Tso2UQ/N5Zx5ZqD29Y.jpg?size=85x83&quality=96&sign=a34b2a8d80a6d73cc33807e9100e8f34&type=album',
     media: 'https://sun9-24.userapi.com/impg/scXIdGaaiGSa53n1n5z7MbUUQ-t7ijjMNJoJPA/hdlWzZqScWQ.jpg?size=140x183&quality=96&sign=3d04d6fed6fede573bc7a3a813943287&type=album',
-    description: `Полина, Поздравляю с 8 марта от себя и от dollar'а (если конечно ещё помнишь такого)`,
+    description: `Полина, поздравляю с 8 марта от себя и от dollar'а (если конечно ещё помнишь такого)`,
     likes: 119,
     loadTime: 1709877513000,
 },{
