@@ -93,7 +93,7 @@ const posts = [{
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-78.userapi.com/impg/OSmuRfR9SReCVML3HbF3wZuMoQlGMydBs14K9g/tQJKS4qqA9o.jpg?size=736x420&quality=95&sign=42fa1413dddb1b10d8579580e5f37baa&type=album',
-    description: 'Вика, поздравляю с 8 марта.. улыбайcя почаще)',
+    description: 'Вика, поздравляю с 8 марта)',
     likes: 83,
     loadTime: 1709871633000,
 
