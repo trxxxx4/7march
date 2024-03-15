@@ -14,9 +14,20 @@ const countTimeFromPost = (loadTime) => {
     else if (((time - loadTime)/1000/60/60/24 >= 1) && ((time - loadTime)/1000/60/60/24 < 7)){
         return `${Math.floor((time - loadTime)/1000/60/60/24)} д. назад`
     }
-
-
+    else if (((time - loadTime)/1000/60/60/24/7 >= 1) && ((time - loadTime)/1000/60/60/24/7 < 4)){
+        return `${Math.floor((time - loadTime)/1000/60/60/24/7)} н. назад`
+    }
+    else if (((time - loadTime)/1000/60/60/24/7/4 >= 1) && ((time - loadTime)/1000/60/60/24/7/4 < 12)){
+        return `${Math.floor((time - loadTime)/1000/60/60/24/7)} м. назад`
+    }
 }
+
+
+
+
+
+
+
 
 
 const countTimeFromComment = (loadTime) => {
@@ -68,7 +79,7 @@ const storiesUsers = [{
 const posts = [{
     nickname: 'syndYYk007',
     avatar: 'https://sun9-22.userapi.com/impg/g9ZyWaW3aQsvEEt9rPei2Bl6YI-wts0AEc8f2A/o4oe00raq7s.jpg?size=298x298&quality=95&sign=4a5be514cf3b4c560c98422c1e7e501d&type=album',
-    media: 'https://sun9-38.userapi.com/impg/Qacg3t_p1uM0NI9NJ1_O6NVO1tCWLn4kPql5sg/5Nia9m0rj8g.jpg?size=1287x929&quality=96&sign=4f6e0360266884e8e1b453bb4bfbefc4&type=album',
+    media: 'https://sun9-20.userapi.com/impg/7Kp4E2fR2WgOk5F_F5XEGBLeuDHONtLXdpVIVQ/7uIrqG9GLrU.jpg?size=151x178&quality=96&sign=5dd72113ca39a6f90db784f128de9602&type=album',
     description: 'Кира, поздравляю с 8 марта ',
     likes: 104,
     loadTime: 1709869833000,
@@ -137,12 +148,23 @@ const posts = [{
 
 const inputsDiv = document.querySelectorAll('.button__and__input__pole');
 const inputs = document.querySelectorAll('.comment__input');
-//inputButtons = document.querySelectorAll('.add__comment__button');
+inputButtons = document.querySelectorAll('.add__comment__button');
 console.log(inputs);
 
 const likeDefault = 0;
 
+inputButtons.forEach((item, index)=>{
+    item.addEventListener('click', function(){
+        if (item.disabled == false){
+            setComment(inputs[index].value, index)
+        }
+        
+    })
+})
+
 const setComment = (inputValue,  index) =>{
+    
+
     console.log('zxc');
     let commentContainer = document.createElement('div');
     commentContainer.classList.add('comment__container');
@@ -184,6 +206,13 @@ const setComment = (inputValue,  index) =>{
     
     
 }
+
+
+//inputs.forEach((item, index)=>{
+    //document.querySelectorAll('.add__comment__button').forEach((el, i)=>{
+     //   el.addEventListener('click', setComment(item.value, index))
+   // })
+//})
 
 
 
@@ -232,9 +261,10 @@ const flButton = () =>{
             //button.innerHTML = '<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>';
             //inputsDiv[index].appendChild(button);
 
-window.addEventListener('click', flButton);
+document.querySelectorAll('.comment__input').forEach((item)=>{
+    item.addEventListener('input', flButton)});
 
-window.addEventListener('keyup', flButton);
+
 
 
 
