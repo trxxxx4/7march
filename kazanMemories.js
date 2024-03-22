@@ -17,7 +17,7 @@ const countTimeFromPost = (loadTime) => {
     else if (((time - loadTime)/1000/60/60/24/7 >= 1) && ((time - loadTime)/1000/60/60/24/7 < 4)){
         return `${Math.floor((time - loadTime)/1000/60/60/24/7)} н. назад`
     }
-    else if (((time - loadTime)/1000/60/60/24/7/4 >= 1) && ((time - loadTime)/1000/60/60/24/7/4 < 12)){
+    else if (((time - loadTime)/1000/60/60/24 >= 30) && ((time - loadTime)/1000/60/60/24/7/4 < 12)){
         return `${Math.floor((time - loadTime)/1000/60/60/24/7)} м. назад`
     }
 }
@@ -79,7 +79,7 @@ const storiesUsers = [{
 const posts = [{
     nickname: 'syndYYk007',
     avatar: 'https://sun9-22.userapi.com/impg/g9ZyWaW3aQsvEEt9rPei2Bl6YI-wts0AEc8f2A/o4oe00raq7s.jpg?size=298x298&quality=95&sign=4a5be514cf3b4c560c98422c1e7e501d&type=album',
-    media: 'https://sun9-20.userapi.com/impg/7Kp4E2fR2WgOk5F_F5XEGBLeuDHONtLXdpVIVQ/7uIrqG9GLrU.jpg?size=151x178&quality=96&sign=5dd72113ca39a6f90db784f128de9602&type=album',
+    media: 'https://sun9-80.userapi.com/impg/RUuk7Szntw4FoF5UFshI1ifWvOECzyTYkmi6Yw/_hQALL50ND0.jpg?size=283x359&quality=96&sign=bf2f6808281ef2f7a8b706fe6cb4fe6d&type=album',
     description: 'Кира, поздравляю с 8 марта ',
     likes: 104,
     loadTime: 1709869833000,
@@ -104,7 +104,7 @@ const posts = [{
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-44.userapi.com/impg/Zt1lWAANjtnnbrYRylzmTmK7NxPYinxQ-Th8QQ/cgFM9vA824A.jpg?size=223x204&quality=96&sign=3de84f8a7bb5d2b02dc3c7d9ad3e612f&type=album',
-    description: 'Вика, поздравляю с 8 марта, ну как бы все)',
+    description: 'Вика, ну как бы с 8 марта)',
     likes: 83,
     loadTime: 1709871633000,
 

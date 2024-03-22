@@ -143,7 +143,7 @@
     #timur__media{
         width: 100%;
         
-        aspect-ratio: 151/178;
+        aspect-ratio: 283/359;
     }
     #bagdish__media__ended{
         width: 100%;
@@ -175,6 +175,7 @@
         justify-content: start;
         align-items: start;
         gap: 10px;
+        padding-bottom: 10px;
 
     }
     .post__footer__container{
@@ -374,8 +375,95 @@
 
 
 
-
+/*
 @media screen and (min-width:768px)  {
+    .comment__pole__container{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:5px;
+    }
+    .add__comment__avatar{
+        width: 34px;
+        border-radius: 50%;
+
+        height: 34px;
+    }
+    .comment__container{
+        width: 93%;
+        display: flex;
+        justify-content: start;
+        gap:10px;
+        padding-bottom: 15px;
+
+    }
+    .nickname__and__data__container{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .add__comment__avatar__comment__container{
+        width: 10%;
+    }
+    .add__comment__avatar__comment{
+        width: 26px;
+        border-radius: 50%;
+
+        height: 26px;
+    }
+    .like__in__comment{
+        width: 10%;
+    }
+    .comment__user{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .comment__input{
+        border: none;
+        color: #6E6E6E;
+        font-size: 15px;
+        width: 70%;
+        outline: none;
+    }
+    
+    .add__comment{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+    }
+    .load__time{
+        font-size: 10px;
+        text-align: center;
+        color: #6E6E6E;
+        font-weight: 400; 
+    }
+    .button__and__input__pole{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       
+        border-radius: 17px;
+        height: 100%;
+        box-shadow: 0px 0px 2px #6E6E6E ;
+        
+    }
+    .add__comment__button{
+        background-color: rgb(0, 141, 255);
+        width: 50px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        
+    }
+    
+    
     *{
         margin: 0px;
         font-family: "Rubik", sans-serif;
@@ -617,7 +705,7 @@
     #timur__media{
         width: 100%;
         
-        aspect-ratio: 151/178;
+        aspect-ratio: 283/359;
     }
     #sergey__media{
         width: 100%;
@@ -650,6 +738,7 @@
         justify-content: start;
         align-items: start;
         gap: 10px;
+        padding-bottom: 10px;
 
     }
     .post__footer__container{
@@ -722,9 +811,97 @@
         font-weight: 400; 
     }
 }
+*/
 
+@media screen and /*(max-width:767px)  and*/ (min-width:476px) {
+    
+    .comment__pole__container{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:5px;
+    }
+    .add__comment__avatar{
+        width: 34px;
+        border-radius: 50%;
 
-@media screen and (max-width:767px)  and (min-width:476px) {
+        height: 34px;
+    }
+    .comment__container{
+        width: 93%;
+        display: flex;
+        justify-content: start;
+        gap:10px;
+        padding-bottom: 15px;
+
+    }
+    .nickname__and__data__container{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .add__comment__avatar__comment__container{
+        width: 10%;
+    }
+    .add__comment__avatar__comment{
+        width: 26px;
+        border-radius: 50%;
+
+        height: 26px;
+    }
+    .like__in__comment{
+        width: 10%;
+    }
+    .comment__user{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .comment__input{
+        border: none;
+        color: #6E6E6E;
+        font-size: 15px;
+        width: 70%;
+        outline: none;
+    }
+    
+    .add__comment{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+    }
+    .load__time{
+        font-size: 10px;
+        text-align: center;
+        color: #6E6E6E;
+        font-weight: 400; 
+    }
+    .button__and__input__pole{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       
+        border-radius: 17px;
+        height: 100%;
+        box-shadow: 0px 0px 2px #6E6E6E ;
+        
+    }
+    .add__comment__button{
+        background-color: rgb(0, 141, 255);
+        width: 50px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        
+    }
+    
+    
     *{
         margin: 0px;
         font-family: "Rubik", sans-serif;
@@ -967,7 +1144,7 @@
     #timur__media{
         width: 100%;
         
-        aspect-ratio: 151/178;
+        aspect-ratio: 283/359;
     }
     #matvey__media{
         width: 100%;
@@ -995,6 +1172,7 @@
         justify-content: start;
         align-items: start;
         gap: 10px;
+        padding-bottom: 10px;
 
     }
     .post__footer__container{
