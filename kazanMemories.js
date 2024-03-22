@@ -164,7 +164,7 @@ inputButtons.forEach((item, index)=>{
 
 const setComment = (inputValue,  index) =>{
     
-
+    inputs[index].value = '';
     console.log('zxc');
     let commentContainer = document.createElement('div');
     commentContainer.classList.add('comment__container');
