@@ -168,6 +168,10 @@
         width: 100%;
         aspect-ratio:  140/183;
     }
+    #update__site__bagdish__media{
+        width: 100%;
+        aspect-ratio:  1080/771;
+    }
     .post__footer{
         width: 90%;
         display: flex;
@@ -814,7 +818,10 @@
 */
 
 @media screen and /*(max-width:767px)  and*/ (min-width:476px) {
-    
+    #update__site__bagdish__media{
+        width: 100%;
+        aspect-ratio:  1080/771;
+    }
     .comment__pole__container{
         width: 75%;
         display: flex;

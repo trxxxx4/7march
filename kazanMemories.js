@@ -46,8 +46,8 @@ const countTimeFromComment = (loadTime) => {
 }
 
 
-console.log(new Date());
-console.log(new Date(1709723043802));
+console.log('Время сейчас:',new Date());
+console.log('Время когда я вытался разобраться с Date:',new Date(1709723043802));
 
 
 
@@ -83,6 +83,7 @@ const posts = [{
     description: 'Кира, поздравляю с 8 марта ',
     likes: 104,
     loadTime: 1709869833000,
+    id: 'timur__media'
     
 },
 {
@@ -92,6 +93,7 @@ const posts = [{
     description: 'С лучшим другом в культурном заведении',
     likes: 173,
     loadTime: 1709725628572,
+    id: 'sergey__media'
 
 }, {
     nickname: 'bat9_bober',
@@ -100,6 +102,7 @@ const posts = [{
     description: 'Поздравляю тебя, Ксюша, с 8 марта. Желаю тебе счастья и чтобы все космонавты знали, что есть такая прекрасная звёздочка.',
     likes: 88,
     loadTime: 1709880213000,
+    id: 'artem__media'
 }, {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
@@ -107,6 +110,7 @@ const posts = [{
     description: 'Вика, ну как бы с 8 марта)',
     likes: 83,
     loadTime: 1709871633000,
+    id: 'bagdish__media'
 
 }, {
     nickname: 's_zimkfff',
@@ -115,6 +119,7 @@ const posts = [{
     description: `Полина, поздравляю с 8 марта от себя и от dollar'а (если конечно ещё помнишь такого)`,
     likes: 119,
     loadTime: 1709877513000,
+    id: 'semen__media'
 },{
     nickname: 'Egoffman',
     avatar: 'https://sun9-23.userapi.com/impg/pwdNiAx-Owk-PS6drRGPXMRLKTRAfWWKmscM-w/R9xGEAZnzBY.jpg?size=130x145&quality=96&sign=780388a8f09c8acdc4d9684bbb4d93d9&type=album',
@@ -122,6 +127,7 @@ const posts = [{
     description: 'zxc after fortnite and new drop',
     likes: 156,
     loadTime: 1709811393000,
+    id: 'sergey__media'
 
 },
  {
@@ -132,35 +138,182 @@ const posts = [{
     likes: 94,
     
     loadTime: 1709850993000,
+    id: 'matvey__media'
     
 }, 
 {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-80.userapi.com/impg/6KS153Go8PtGOtB5FRyGRsyqI7WwX2sUr_QX-Q/o_i_EE-ZBAM.jpg?size=736x736&quality=95&sign=1c3437a23bc77d31dd81f3fefa6ebc0f&type=album',
-    description: 'ну это на случай если это увидит кто-то кроме меня и тимура... ну привет (^_^) , только в личку не пишите что я тварь, я же просто тихий и странный <3',
-    likes: 6,
+    description: 'ну это на случай если это увидит кто-то кроме меня и тимура... ну привет (^_^) , только в личку не пишите что я тварь, я же просто тихий и странный <3... аплоад 7.03.24',
+    likes: 24,
     loadTime: 1709897603000,
+    id: 'bagdish__media__ended'
+
+    
+},
+{
+    nickname: 'trxxxx4',
+    avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
+    media: 'https://sun51-1.userapi.com/impg/PO2GzG5OCeIWS9wzS1Tpr_GqhqCiaCY3Jtuo9w/_C29kYtb6Ag.jpg?size=1080x771&quality=96&sign=e793293f8034966aa663f5769513a502&type=album',
+    description: 'deadinside ✓ emo ✓ drain ✓ epileptic ✓ paranoid ✓ toxic ✓ bipolar ✓ depressed ✓ tilted ✓ antisocial ✓ sad ✓ broken',
+    likes: 11,
+    loadTime: 1711281803855,
+    id: 'update__site__bagdish__media'
 
     
 }
 ]
 
-const inputsDiv = document.querySelectorAll('.button__and__input__pole');
-const inputs = document.querySelectorAll('.comment__input');
-inputButtons = document.querySelectorAll('.add__comment__button');
-console.log(inputs);
-
 const likeDefault = 0;
 
-inputButtons.forEach((item, index)=>{
-    item.addEventListener('click', function(){
-        if (item.disabled == false){
-            setComment(inputs[index].value, index)
-        }
-        
-    })
+
+
+
+
+const createPost = (index) =>{
+    const main = document.querySelector('.main');
+    
+
+    const post = document.createElement('div');
+    post.classList.add('post');
+    main.appendChild(post);
+    const postHeadLineContainer = document.createElement('div');
+    postHeadLineContainer.classList.add("post__head__line__container");
+    const mediaContainer = document.createElement('div');
+    mediaContainer.classList.add("media__container");
+    const postFooterContainer = document.createElement('div');
+    postFooterContainer.classList.add('post__footer__container');
+    const postHeadLine = document.createElement('div');
+    postHeadLine.classList.add('post__head__line');
+    post.appendChild(postHeadLineContainer);
+    post.appendChild(mediaContainer);
+    post.appendChild(postFooterContainer);
+    
+    postHeadLineContainer.appendChild(postHeadLine);
+    
+    
+    const avatarAndNickname = document.createElement('div');
+    avatarAndNickname.classList.add('avatar__and__nickname');
+    const settingsDiv = document.createElement('div');
+    settingsDiv.classList.add('settings__div');
+    settingsThreePoints = document.createElement('img');
+    settingsThreePoints.src = 'settingThreePoints.svg';
+    const avatar = document.createElement('img');
+    avatar.classList.add('avatar');
+    avatar.src = posts[index].avatar;
+    const nickname = document.createElement('h2');
+    nickname.classList.add('nickname');
+    nickname.innerHTML = posts[index].nickname;
+    postHeadLine.appendChild(avatarAndNickname);
+    postHeadLine.appendChild(settingsDiv);
+    avatarAndNickname.appendChild(avatar);
+    avatarAndNickname.appendChild(nickname);
+    settingsDiv.appendChild(settingsThreePoints);
+    const media = document.createElement('img');
+    media.classList.add('media__container');
+    media.src = posts[index].media;
+    media.setAttribute('id', posts[index].id);
+    mediaContainer.appendChild(media);
+
+    const postFooter = document.createElement('div');
+    postFooter.classList.add('post__footer');
+    postFooterContainer.appendChild(postFooter);
+    const likeCommentRepostBooksmarksLine = document.createElement('div');
+    likeCommentRepostBooksmarksLine.classList.add('like__comment__repost__booksmarks__line');
+    postFooter.appendChild(likeCommentRepostBooksmarksLine);
+    const likeCommentRepost = document.createElement('div');
+    likeCommentRepost.classList.add('like__comment__repost');
+    const bookmarks = document.createElement('div');
+    bookmarks.classList.add('bookmarks');
+    const bookmark = document.createElement('img');
+    bookmark.src ='Bookmark.svg';
+    bookmarks.appendChild(bookmark);
+    likeCommentRepostBooksmarksLine.appendChild(likeCommentRepost);
+    likeCommentRepostBooksmarksLine.appendChild(bookmarks);
+    const like = document.createElement('img');
+    like.id = 'heart';
+    like.src = 'Heart.svg';
+    const comment = document.createElement('img');
+    comment.src = "Comment.svg";
+    const plane = document.createElement('img');
+    plane.src = 'https://sun9-61.userapi.com/impg/BkKnjZ8krpvg-9tRml6xnu5i41JuVMVy9Rd2HQ/S3aAGHTPoOU.jpg?size=167x157&quality=96&sign=ac11f12a912a5816565f345d2b8e6195&type=album';
+    plane.id = 'plane';
+    likeCommentRepost.appendChild(like);
+    likeCommentRepost.appendChild(comment);
+    likeCommentRepost.appendChild(plane);
+    const likes = document.createElement('h2');
+    likes.classList.add('likes');
+    likes.innerHTML = `Нравится: ${posts[index].likes}`;
+    postFooter.appendChild(likes);
+    const descriptionContainer = document.createElement('div');
+    descriptionContainer.classList.add('description__container');
+    postFooter.appendChild(descriptionContainer);
+    const description = document.createElement('p');
+    description.classList.add('description');
+
+
+
+    descriptionContainer.appendChild(description);
+    const nicknameWeight = document.createElement('span');
+    const descriptionText = document.createElement('span');
+    nicknameWeight.id = 'nickname__weight';
+    descriptionText.id = 'description__text';
+    nicknameWeight.innerHTML = posts[index].nickname;
+    descriptionText.innerHTML = posts[index].description;
+    description.appendChild(nicknameWeight);
+    description.appendChild(descriptionText);
+    const addComment = document.createElement('div');
+    addComment.classList.add('add__comment');
+    postFooter.appendChild(addComment);
+    const addCommentAvatar = document.createElement('img');
+    addCommentAvatar.classList.add('add__comment__avatar');
+    addCommentAvatar.src = posts[index].avatar;
+    
+    addComment.appendChild(addCommentAvatar);
+    const buttonAndInputPole = document.createElement('div');
+    buttonAndInputPole.classList.add('button__and__input__pole');
+    addComment.appendChild(buttonAndInputPole);
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.placeholder = 'Добавьте комменарий...';
+    input.classList.add('comment__input');
+    buttonAndInputPole.appendChild(input);
+    const button = document.createElement('button');
+    button.classList.add('add__comment__button');
+    button.classList.add('hidden');
+    button.disabled = true;
+    const pointer = document.createElement('img');
+    pointer.src = 'Pointer.svg';
+    button.appendChild(pointer);
+    buttonAndInputPole.appendChild(button);
+
+    const postData = document.createElement('div');
+    postData.classList.add('post__data');
+
+    const loadTime = document.createElement('h2');
+    loadTime.innerHTML = countTimeFromPost(posts[index].loadTime);
+    loadTime.classList.add('load__time');
+
+    postData.appendChild(loadTime);
+    postFooter.appendChild(postData);
+
+    
+
+
+}
+
+
+
+
+
+posts.forEach((item, index)=>{
+    createPost(index);
 })
+
+
+
+
 
 const setComment = (inputValue,  index) =>{
     
@@ -220,6 +373,19 @@ const setComment = (inputValue,  index) =>{
 //document.querySelectorAll('.add__comment__button').forEach((item, index)=>{
   //  item.addEventListener('click', setComment(item.value,  index));
 //})
+const inputs = document.querySelectorAll('.comment__input');
+const inputButtons = document.querySelectorAll('.add__comment__button');
+
+
+
+inputButtons.forEach((item, index)=>{
+    item.addEventListener('click', function(){
+        if (item.disabled == false){
+            setComment(inputs[index].value, index)
+        }
+        
+    })
+})
 
 const flButton = () =>{
     
@@ -267,7 +433,7 @@ document.querySelectorAll('.comment__input').forEach((item)=>{
 
 
 
-
+{/*
 for (let i = 0; i < document.querySelectorAll('.post').length; i++) {
     if (posts[i].media) {
         document.querySelectorAll('.avatar')[i].src = posts[i].avatar;
@@ -296,7 +462,7 @@ for (let i = 0; i < document.querySelectorAll('.post').length; i++) {
     }
 
 }
-
+*/}
 
 
 for (let i = 0; i < storiesUsers.length; i++) {
@@ -306,4 +472,5 @@ for (let i = 0; i < storiesUsers.length; i++) {
 
 
 
-console.log('<3')
+console.log('<3');
+
