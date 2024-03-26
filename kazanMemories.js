@@ -107,6 +107,7 @@ const posts = [{
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-44.userapi.com/impg/Zt1lWAANjtnnbrYRylzmTmK7NxPYinxQ-Th8QQ/cgFM9vA824A.jpg?size=223x204&quality=96&sign=3de84f8a7bb5d2b02dc3c7d9ad3e612f&type=album',
+    media2: 'https://sun9-15.userapi.com/impg/qdvl2som6jBBdVu_gzfMs4yZtTb14J41fWBFMQ/oGzU4EXGznU.jpg?size=878x878&quality=95&sign=9f7b99ef1139517fe7b3e9cf0188a1b6&type=album',
     description: 'Вика, ну как бы с 8 марта)',
     likes: 83,
     loadTime: 1709871633000,
@@ -210,11 +211,7 @@ const createPost = (index) =>{
     avatarAndNickname.appendChild(avatar);
     avatarAndNickname.appendChild(nickname);
     settingsDiv.appendChild(settingsThreePoints);
-    const media = document.createElement('img');
-    media.classList.add('media__container');
-    media.src = posts[index].media;
-    media.setAttribute('id', posts[index].id);
-    mediaContainer.appendChild(media);
+    
 
     const postFooter = document.createElement('div');
     postFooter.classList.add('post__footer');
@@ -299,7 +296,52 @@ const createPost = (index) =>{
     postFooter.appendChild(postData);
 
     
+    if (!posts[index].media2){
+        const media = document.createElement('img');
+        media.classList.add('media__container');
+        media.src = posts[index].media;
+        media.setAttribute('id', posts[index].id);
+        mediaContainer.appendChild(media);
+    
+    }
+    else{
+        mediaContainer.id = 'media__container';
+        const swiperContainer = document.createElement('div');
+        swiperContainer.setAttribute('class', 'swiper', 'mySwiper');
+        swiperContainer.classList.add('mySwiper');
+        //swiperContainer.setAttribute('class', 'mySwiper');
+        
+        mediaContainer.appendChild(swiperContainer);
+        {/*media1 = document.createElement('div');
+        media1.innerHTML = "Slide1";
+        media2 = document.createElement('div');
+    media2.innerHTML = "Slide2";*/}
+        //swiperContainer.setAttribute('id', posts[index].id);
+        
+        media1 = document.createElement('img');
+        
+        media1.src = posts[index].media;
+       media2 = document.createElement('img');
+        
+media2.src = posts[index].media2;
+        //swiperContainer.appendChild(media1);
+        media1.classList.add('swiper-slide');
+        media2.classList.add('swiper-slide');
+        const swiperWrapper = document.createElement('div');
+        swiperWrapper.classList.add('swiper-wrapper');
+        swiperContainer.appendChild(swiperWrapper);
 
+        swiperWrapper.appendChild(media2);
+        swiperWrapper.appendChild(media1);
+        
+        //swiperContainer.appendChild(media2);
+        const swiperPadignation = document.createElement('div');
+        swiperPadignation.classList.add('swiper-pagination');
+        mediaContainer.appendChild(swiperPadignation);
+    
+    }
+    
+    
 
 }
 
