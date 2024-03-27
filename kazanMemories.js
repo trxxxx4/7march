@@ -8,17 +8,17 @@ const countTimeFromPost = (loadTime) => {
         return `${Math.floor((time - loadTime) / 1000 / 60 / 60)} ч. назад`;
 
     }
-    else if ((time - loadTime) / 1000/60 <= 59) {
-        return `${Math.floor((time - loadTime) / 1000/60)} м. назад`;
+    else if ((time - loadTime) / 1000 / 60 <= 59) {
+        return `${Math.floor((time - loadTime) / 1000 / 60)} м. назад`;
     }
-    else if (((time - loadTime)/1000/60/60/24 >= 1) && ((time - loadTime)/1000/60/60/24 < 7)){
-        return `${Math.floor((time - loadTime)/1000/60/60/24)} д. назад`
+    else if (((time - loadTime) / 1000 / 60 / 60 / 24 >= 1) && ((time - loadTime) / 1000 / 60 / 60 / 24 < 7)) {
+        return `${Math.floor((time - loadTime) / 1000 / 60 / 60 / 24)} д. назад`
     }
-    else if (((time - loadTime)/1000/60/60/24/7 >= 1) && ((time - loadTime)/1000/60/60/24/7 < 4)){
-        return `${Math.floor((time - loadTime)/1000/60/60/24/7)} н. назад`
+    else if (((time - loadTime) / 1000 / 60 / 60 / 24 / 7 >= 1) && ((time - loadTime) / 1000 / 60 / 60 / 24 / 7 < 4)) {
+        return `${Math.floor((time - loadTime) / 1000 / 60 / 60 / 24 / 7)} н. назад`
     }
-    else if (((time - loadTime)/1000/60/60/24 >= 30) && ((time - loadTime)/1000/60/60/24/7/4 < 12)){
-        return `${Math.floor((time - loadTime)/1000/60/60/24/7)} м. назад`
+    else if (((time - loadTime) / 1000 / 60 / 60 / 24 >= 30) && ((time - loadTime) / 1000 / 60 / 60 / 24 / 7 / 4 < 12)) {
+        return `${Math.floor((time - loadTime) / 1000 / 60 / 60 / 24 / 7)} м. назад`
     }
 }
 
@@ -35,19 +35,19 @@ const countTimeFromComment = (loadTime) => {
         return `${Math.floor((time - loadTime) / 1000 / 60 / 60)} ч.`;
 
     }
-    else if ((time - loadTime) / 1000/60 <= 59) {
-        return `${Math.floor((time - loadTime) / 1000/60)} мин.`;
+    else if ((time - loadTime) / 1000 / 60 <= 59) {
+        return `${Math.floor((time - loadTime) / 1000 / 60)} мин.`;
     }
-    else if (((time - loadTime)/1000/60/60/24 >= 1) && ((time - loadTime)/1000/60/60/24 < 7)){
-        return `${Math.floor((time - loadTime)/1000/60/60/24)} нед.`
+    else if (((time - loadTime) / 1000 / 60 / 60 / 24 >= 1) && ((time - loadTime) / 1000 / 60 / 60 / 24 < 7)) {
+        return `${Math.floor((time - loadTime) / 1000 / 60 / 60 / 24)} нед.`
     }
 
 
 }
 
 
-console.log('Время сейчас:',new Date());
-console.log('Время когда я вытался разобраться с Date:',new Date(1709723043802));
+console.log('Время сейчас:', new Date());
+console.log('Время когда я вытался разобраться с Date:', new Date(1709723043802));
 
 
 
@@ -84,7 +84,7 @@ const posts = [{
     likes: 104,
     loadTime: 1709869833000,
     id: 'timur__media'
-    
+
 },
 {
     nickname: 'sMaxx1mov',
@@ -108,6 +108,7 @@ const posts = [{
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-44.userapi.com/impg/Zt1lWAANjtnnbrYRylzmTmK7NxPYinxQ-Th8QQ/cgFM9vA824A.jpg?size=223x204&quality=96&sign=3de84f8a7bb5d2b02dc3c7d9ad3e612f&type=album',
     media2: 'https://sun9-15.userapi.com/impg/qdvl2som6jBBdVu_gzfMs4yZtTb14J41fWBFMQ/oGzU4EXGznU.jpg?size=878x878&quality=95&sign=9f7b99ef1139517fe7b3e9cf0188a1b6&type=album',
+    media3: 'https://sun9-42.userapi.com/impg/u1CfrNquhIv3zL1UnsCXQL6ogJSBOKFWXDw_ww/sBTXfZLdLOE.jpg?size=564x564&quality=96&sign=6a539acea3f2ce562ce0310cd82c5b9d&type=album',
     description: 'Вика, ну как бы с 8 марта)',
     likes: 83,
     loadTime: 1709871633000,
@@ -121,27 +122,29 @@ const posts = [{
     likes: 119,
     loadTime: 1709877513000,
     id: 'semen__media'
-},{
+}, {
     nickname: 'Egoffman',
     avatar: 'https://sun9-23.userapi.com/impg/pwdNiAx-Owk-PS6drRGPXMRLKTRAfWWKmscM-w/R9xGEAZnzBY.jpg?size=130x145&quality=96&sign=780388a8f09c8acdc4d9684bbb4d93d9&type=album',
     media: 'https://sun9-77.userapi.com/impg/qqPrwvi3VGYkBOd4Hq4Kdv3a9sYjhCnRvWerHw/KxEc6usI81Y.jpg?size=2560x1920&quality=95&sign=d20fda9dc9ac5b6ddca018f401ebcbc1&type=album',
+    //media2: 'https://sun9-33.userapi.com/impg/rXPkAN7iq0cQkFu221L4r-nVeaqDRDKCeNl3kA/exOEkJS-VcI.jpg?size=604x402&quality=96&sign=47b781752a1623f76e888dae31bbb5f0&type=album',
+    media2: 'ity_bw.jpg',
     description: 'zxc after fortnite and new drop',
     likes: 156,
     loadTime: 1709811393000,
     id: 'sergey__media'
 
 },
- {
+{
     nickname: 'ba4uhhha',
     avatar: 'https://sun9-75.userapi.com/impg/Wt5tj7zBmHpz7jjC1hS4tvKLawNfbXActAFGSg/FUKgdfi1lFw.jpg?size=319x343&quality=95&sign=e79d9b42bfbfb166597d8f94e7394b4b&type=album',
     media: 'https://sun9-37.userapi.com/impg/xkXFJqkdTrI9uAhG3YcsB9lYuCX18IPopN-aOQ/v30xFo73348.jpg?size=2560x1704&quality=96&sign=6b29e05e95265628a1518341880990c5&type=album',
     description: 'Даша, с 8 марта. Хотел бы пожелать оставаться такой же позитивной и яркой',
     likes: 94,
-    
+
     loadTime: 1709850993000,
     id: 'matvey__media'
-    
-}, 
+
+},
 {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
@@ -151,18 +154,20 @@ const posts = [{
     loadTime: 1709897603000,
     id: 'bagdish__media__ended'
 
-    
+
 },
 {
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun51-1.userapi.com/impg/PO2GzG5OCeIWS9wzS1Tpr_GqhqCiaCY3Jtuo9w/_C29kYtb6Ag.jpg?size=1080x771&quality=96&sign=e793293f8034966aa663f5769513a502&type=album',
-    description: 'deadinside ✓ emo ✓ drain ✓ epileptic ✓ paranoid ✓ toxic ✓ bipolar ✓ depressed ✓ tilted ✓ antisocial ✓ sad ✓ broken',
+    media2: 'https://sun9-59.userapi.com/impg/ARUAEBzak1v-QIKjs3IGah00BWkywT9DGDnlMw/ccotZ5c0UXI.jpg?size=735x728&quality=96&sign=7de79f69a5f7bd77465065d76bcd0ccf&type=album',
+    media3: 'https://sun9-54.userapi.com/impg/KpH5N8c3epYx2XpY_OGG3XaiqjqCKd3NSyYwNA/6LhDGi3Vc6U.jpg?size=1280x512&quality=96&sign=de20110ebdb3e1ce269d34350b858e7e&type=album',
+    description: 'deadinside ✓ emo ✓ drain ✓ epileptic ✓ paranoid ✓ toxic ✓ bipolar ✓ depressed ✓ tilted ✓ antisocial ✓ sad ✓ broken... 24.03.24 переделал структуру, а 27.03.24 сделал нормально свайпер',
     likes: 11,
-    loadTime: 1711281803855,
+    loadTime: 1711547168199,
     id: 'update__site__bagdish__media'
 
-    
+
 }
 ]
 
@@ -172,9 +177,9 @@ const likeDefault = 0;
 
 
 
-const createPost = (index) =>{
+const createPost = (index) => {
     const main = document.querySelector('.main');
-    
+
 
     const post = document.createElement('div');
     post.classList.add('post');
@@ -190,10 +195,10 @@ const createPost = (index) =>{
     post.appendChild(postHeadLineContainer);
     post.appendChild(mediaContainer);
     post.appendChild(postFooterContainer);
-    
+
     postHeadLineContainer.appendChild(postHeadLine);
-    
-    
+
+
     const avatarAndNickname = document.createElement('div');
     avatarAndNickname.classList.add('avatar__and__nickname');
     const settingsDiv = document.createElement('div');
@@ -211,7 +216,7 @@ const createPost = (index) =>{
     avatarAndNickname.appendChild(avatar);
     avatarAndNickname.appendChild(nickname);
     settingsDiv.appendChild(settingsThreePoints);
-    
+
 
     const postFooter = document.createElement('div');
     postFooter.classList.add('post__footer');
@@ -224,7 +229,7 @@ const createPost = (index) =>{
     const bookmarks = document.createElement('div');
     bookmarks.classList.add('bookmarks');
     const bookmark = document.createElement('img');
-    bookmark.src ='Bookmark.svg';
+    bookmark.src = 'Bookmark.svg';
     bookmarks.appendChild(bookmark);
     likeCommentRepostBooksmarksLine.appendChild(likeCommentRepost);
     likeCommentRepostBooksmarksLine.appendChild(bookmarks);
@@ -266,7 +271,7 @@ const createPost = (index) =>{
     const addCommentAvatar = document.createElement('img');
     addCommentAvatar.classList.add('add__comment__avatar');
     addCommentAvatar.src = posts[index].avatar;
-    
+
     addComment.appendChild(addCommentAvatar);
     const buttonAndInputPole = document.createElement('div');
     buttonAndInputPole.classList.add('button__and__input__pole');
@@ -295,35 +300,40 @@ const createPost = (index) =>{
     postData.appendChild(loadTime);
     postFooter.appendChild(postData);
 
-    
-    if (!posts[index].media2){
+
+
+
+    if (!posts[index].media2) {
         const media = document.createElement('img');
         media.classList.add('media__container');
         media.src = posts[index].media;
         media.setAttribute('id', posts[index].id);
         mediaContainer.appendChild(media);
-    
+
     }
-    else{
+    else {
+
+
+
         mediaContainer.id = 'media__container';
         const swiperContainer = document.createElement('div');
         swiperContainer.setAttribute('class', 'swiper', 'mySwiper');
         swiperContainer.classList.add('mySwiper');
         //swiperContainer.setAttribute('class', 'mySwiper');
-        
+
         mediaContainer.appendChild(swiperContainer);
         {/*media1 = document.createElement('div');
         media1.innerHTML = "Slide1";
         media2 = document.createElement('div');
-    media2.innerHTML = "Slide2";*/}
+        media2.innerHTML = "Slide2";*/}
         //swiperContainer.setAttribute('id', posts[index].id);
-        
+
         media1 = document.createElement('img');
-        
+
         media1.src = posts[index].media;
-       media2 = document.createElement('img');
-        
-media2.src = posts[index].media2;
+        media2 = document.createElement('img');
+
+        media2.src = posts[index].media2;
         //swiperContainer.appendChild(media1);
         media1.classList.add('swiper-slide');
         media2.classList.add('swiper-slide');
@@ -333,23 +343,31 @@ media2.src = posts[index].media2;
 
         swiperWrapper.appendChild(media2);
         swiperWrapper.appendChild(media1);
-        
+
         //swiperContainer.appendChild(media2);
         const swiperPadignation = document.createElement('div');
         swiperPadignation.classList.add('swiper-pagination');
-        mediaContainer.appendChild(swiperPadignation);
-    
+        swiperContainer.appendChild(swiperPadignation);
+
+        if (posts[index].media3) {
+            media3 = document.createElement('img');
+            media3.src = posts[index].media3;
+            media3.classList.add('swiper-slide');
+            swiperWrapper.appendChild(media3);
+        }
+
+
     }
     
-    
+
+
 
 }
 
 
 
 
-
-posts.forEach((item, index)=>{
+posts.forEach((item, index) => {
     createPost(index);
 })
 
@@ -357,13 +375,13 @@ posts.forEach((item, index)=>{
 
 
 
-const setComment = (inputValue,  index) =>{
-    
+const setComment = (inputValue, index) => {
+
     inputs[index].value = '';
     console.log('zxc');
     let commentContainer = document.createElement('div');
     commentContainer.classList.add('comment__container');
-    let avatarContainer =  document.createElement('div');
+    let avatarContainer = document.createElement('div');
     avatarContainer.classList.add('add__comment__avatar__comment');
     let likeComment = document.createElement('div');
     likeComment.classList.add();
@@ -377,7 +395,7 @@ const setComment = (inputValue,  index) =>{
     nicknameAndDateContainer.classList.add('nickname__and__data__container');
     let commentText = document.createElement('h2');
     commentText.classList.add('nickname');
-    let  respondButton = document.createElement('h2');
+    let respondButton = document.createElement('h2');
     respondButton.classList.add('load__time');
     let commentLoadTime = document.createElement('h2');
     commentLoadTime.classList.add('load__time');
@@ -396,58 +414,58 @@ const setComment = (inputValue,  index) =>{
     nicknameAndDateContainer.appendChild(commentLoadTime);
     commentPoleContainer.appendChild(commentText);
     commentPoleContainer.appendChild(respondButton);
-    
-    
-    
-    
+
+
+
+
 }
 
 
 //inputs.forEach((item, index)=>{
-    //document.querySelectorAll('.add__comment__button').forEach((el, i)=>{
-     //   el.addEventListener('click', setComment(item.value, index))
-   // })
+//document.querySelectorAll('.add__comment__button').forEach((el, i)=>{
+//   el.addEventListener('click', setComment(item.value, index))
+// })
 //})
 
 
 
 
 //document.querySelectorAll('.add__comment__button').forEach((item, index)=>{
-  //  item.addEventListener('click', setComment(item.value,  index));
+//  item.addEventListener('click', setComment(item.value,  index));
 //})
 const inputs = document.querySelectorAll('.comment__input');
 const inputButtons = document.querySelectorAll('.add__comment__button');
 
 
 
-inputButtons.forEach((item, index)=>{
-    item.addEventListener('click', function(){
-        if (item.disabled == false){
+inputButtons.forEach((item, index) => {
+    item.addEventListener('click', function () {
+        if (item.disabled == false) {
             setComment(inputs[index].value, index)
         }
-        
+
     })
 })
 
-const flButton = () =>{
-    
+const flButton = () => {
+
     inputs.forEach((item, index) => {
-        
-        if (item.value != ''){
+
+        if (item.value != '') {
             //console.log(item.value);
             document.querySelectorAll('.add__comment__button')[index].classList.remove('hidden');
             document.querySelectorAll('.add__comment__button')[index].classList.add('view__animation');
-            
+
             document.querySelectorAll('.add__comment__button')[index].disabled = false;
-            
+
             //document.querySelectorAll('.add__comment__button')[index].addEventListener('click', setComment(item.value,  index));
             //setComment(item.value, index)
             //inputValueFunk(item.value);
-            
-            
-                
+
+
+
         }
-        else{
+        else {
             document.querySelectorAll('.add__comment__button')[index].classList.remove('view__animation');
             document.querySelectorAll('.add__comment__button')[index].classList.add('hidden__animation');
             document.querySelectorAll('.add__comment__button')[index].classList.remove('hidden__animation');
@@ -455,7 +473,7 @@ const flButton = () =>{
             document.querySelectorAll('.add__comment__button')[index].disabled = true;
 
         }
-        
+
     });
 }
 
@@ -465,12 +483,13 @@ const flButton = () =>{
 
 
 //let button = document.createElement('button');
-            //button.classList.add('add__comment__button');
-            //button.innerHTML = '<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>';
-            //inputsDiv[index].appendChild(button);
+//button.classList.add('add__comment__button');
+//button.innerHTML = '<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>';
+//inputsDiv[index].appendChild(button);
 
-document.querySelectorAll('.comment__input').forEach((item)=>{
-    item.addEventListener('input', flButton)});
+document.querySelectorAll('.comment__input').forEach((item) => {
+    item.addEventListener('input', flButton)
+});
 
 
 
