@@ -108,7 +108,6 @@ const posts = [{
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-44.userapi.com/impg/Zt1lWAANjtnnbrYRylzmTmK7NxPYinxQ-Th8QQ/cgFM9vA824A.jpg?size=223x204&quality=96&sign=3de84f8a7bb5d2b02dc3c7d9ad3e612f&type=album',
     media2: 'https://sun9-15.userapi.com/impg/qdvl2som6jBBdVu_gzfMs4yZtTb14J41fWBFMQ/oGzU4EXGznU.jpg?size=878x878&quality=95&sign=9f7b99ef1139517fe7b3e9cf0188a1b6&type=album',
-    media3: 'https://sun9-42.userapi.com/impg/u1CfrNquhIv3zL1UnsCXQL6ogJSBOKFWXDw_ww/sBTXfZLdLOE.jpg?size=564x564&quality=96&sign=6a539acea3f2ce562ce0310cd82c5b9d&type=album',
     description: 'Вика, ну как бы с 8 марта)',
     likes: 83,
     loadTime: 1709871633000,
@@ -138,6 +137,7 @@ const posts = [{
     nickname: 'ba4uhhha',
     avatar: 'https://sun9-75.userapi.com/impg/Wt5tj7zBmHpz7jjC1hS4tvKLawNfbXActAFGSg/FUKgdfi1lFw.jpg?size=319x343&quality=95&sign=e79d9b42bfbfb166597d8f94e7394b4b&type=album',
     media: 'https://sun9-37.userapi.com/impg/xkXFJqkdTrI9uAhG3YcsB9lYuCX18IPopN-aOQ/v30xFo73348.jpg?size=2560x1704&quality=96&sign=6b29e05e95265628a1518341880990c5&type=album',
+    media2: 'https://sun9-75.userapi.com/impg/6IV3i1d7-xeTOz6sMG_1wlPuLai2STmjvNcQ-A/uy37oiQ6J28.jpg?size=435x343&quality=96&sign=bc79d7345661fde66b9433a0d787d11f&type=album',
     description: 'Даша, с 8 марта. Хотел бы пожелать оставаться такой же позитивной и яркой',
     likes: 94,
 
@@ -341,9 +341,9 @@ const createPost = (index) => {
         swiperWrapper.classList.add('swiper-wrapper');
         swiperContainer.appendChild(swiperWrapper);
 
-        swiperWrapper.appendChild(media2);
+        
         swiperWrapper.appendChild(media1);
-
+        swiperWrapper.appendChild(media2);
         //swiperContainer.appendChild(media2);
         const swiperPadignation = document.createElement('div');
         swiperPadignation.classList.add('swiper-pagination');
