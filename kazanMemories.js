@@ -18,7 +18,8 @@ const countTimeFromPost = (loadTime) => {
         return `${Math.floor((time - loadTime) / 1000 / 60 / 60 / 24 / 7)} н. назад`
     }
     else if (((time - loadTime) / 1000 / 60 / 60 / 24 >= 30) && ((time - loadTime) / 1000 / 60 / 60 / 24 / 7 / 4 < 12)) {
-        return `${Math.floor((time - loadTime) / 1000 / 60 / 60 / 24 / 7)} м. назад`
+        console.log((time - loadTime) / 1000 / 60 / 60 / 24 / 7 / 4 , 'zxc zxc zxc 10.04.24')
+        return `${Math.floor((time - loadTime) / 1000 / 60 / 60 / 24 / 7/4)} мec. назад`
     }
 }
 
@@ -136,7 +137,7 @@ const posts = [{
 {
     nickname: 'ba4uhhha',
     avatar: 'https://sun9-75.userapi.com/impg/Wt5tj7zBmHpz7jjC1hS4tvKLawNfbXActAFGSg/FUKgdfi1lFw.jpg?size=319x343&quality=95&sign=e79d9b42bfbfb166597d8f94e7394b4b&type=album',
-    media: 'https://sun9-37.userapi.com/impg/xkXFJqkdTrI9uAhG3YcsB9lYuCX18IPopN-aOQ/v30xFo73348.jpg?size=2560x1704&quality=96&sign=6b29e05e95265628a1518341880990c5&type=album',
+    media: 'https://sun9-51.userapi.com/impg/XOQOm6_RPrVkpODiHU3WSGYBa-6GEJ3Brj8I6A/h0B8kzEuinE.jpg?size=1035x836&quality=96&sign=1f013d1d3bd458b1335e00fced57d7fe&type=album',
     media2: 'https://sun9-75.userapi.com/impg/6IV3i1d7-xeTOz6sMG_1wlPuLai2STmjvNcQ-A/uy37oiQ6J28.jpg?size=435x343&quality=96&sign=bc79d7345661fde66b9433a0d787d11f&type=album',
     description: 'Даша, с 8 марта. Хотел бы пожелать оставаться такой же позитивной и яркой',
     likes: 94,
