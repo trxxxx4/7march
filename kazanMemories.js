@@ -104,7 +104,7 @@ const posts = [{
     likes: 88,
     loadTime: 1709880213000,
     id: 'artem__media'
-}, {
+}, {/*
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-44.userapi.com/impg/Zt1lWAANjtnnbrYRylzmTmK7NxPYinxQ-Th8QQ/cgFM9vA824A.jpg?size=223x204&quality=96&sign=3de84f8a7bb5d2b02dc3c7d9ad3e612f&type=album',
@@ -113,7 +113,7 @@ const posts = [{
     likes: 83,
     loadTime: 1709871633000,
     id: 'bagdish__media'
-
+*/
 }, {
     nickname: 's_zimkfff',
     avatar: 'https://sun9-54.userapi.com/impg/tXF5mdH2A0lbiqaH3DM-O6HJatMpkYf5Tso2UQ/N5Zx5ZqD29Y.jpg?size=85x83&quality=96&sign=a34b2a8d80a6d73cc33807e9100e8f34&type=album',
@@ -150,7 +150,7 @@ const posts = [{
     nickname: 'trxxxx4',
     avatar: 'https://sun9-42.userapi.com/impg/S-qiKsoFqER8x44-xNd41d7BmRLmKwG4AV2cAQ/_7jTBU3zpxI.jpg?size=736x714&quality=95&sign=aa4c31f24ba1a2447ea7f279e25b81f5&type=album',
     media: 'https://sun9-80.userapi.com/impg/6KS153Go8PtGOtB5FRyGRsyqI7WwX2sUr_QX-Q/o_i_EE-ZBAM.jpg?size=736x736&quality=95&sign=1c3437a23bc77d31dd81f3fefa6ebc0f&type=album',
-    description: 'ну это на случай если это увидит кто-то кроме меня и тимура... ну привет (^_^) , только в личку не пишите что я тварь, я же просто тихий и странный <3... upload 8.03.24',
+    description: 'ну это на случай если это увидит кто-то кроме меня и тимура... ну привет (^_^). upload 8.03.24',
     likes: 24,
     loadTime: 1709897603000,
     id: 'bagdish__media__ended'
