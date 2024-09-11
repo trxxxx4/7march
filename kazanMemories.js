@@ -271,7 +271,7 @@ const createPost = (index) => {
     postFooter.appendChild(addComment);
     const addCommentAvatar = document.createElement('img');
     addCommentAvatar.classList.add('add__comment__avatar');
-    addCommentAvatar.src = posts[index].avatar;
+    addCommentAvatar.src = storiesUsers[0].image;
 
     addComment.appendChild(addCommentAvatar);
     const buttonAndInputPole = document.createElement('div');
