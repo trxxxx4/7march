@@ -73,7 +73,7 @@ const storiesUsers = [{
 {
     id: 2,
     nickname: 'GitHub',
-    image: 'https://sun9-79.userapi.com/impg/CFLarQBrfJcAdwofisA8Fx2Wj8YCj7CxcALo1g/gtPJJqX1Hj4.jpg?size=320x320&quality=95&sign=69389ca75019c9a68141b63e7bdee3f7&type=album'},
+    image: 'https://sun9-77.userapi.com/impg/QbEDidhd1FakAE2J5VfmIB_5HWqklAP6yuWv1Q/CgNZB6Q-opc.jpg?size=460x460&quality=95&sign=0ce56a34ebec987fefab5b0d33a96fa1&type=album'},
 {
     id: 3,
     nickname: 'zxcVladdd',
